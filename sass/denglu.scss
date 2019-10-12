@@ -1,0 +1,42 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: url(../img/58.jpg) no-repeat center top;
+  position: relative; }
+
+.huanyin {
+  font-size: 34px;
+  font-family: "楷体";
+  position: absolute;
+  left: 450px;
+  top: 50px; }
+  .huanyin p {
+    display: inline-block; }
+  .huanyin span {
+    font-size: 50px;
+    font-family: "楷体";
+    font-weight: bolder;
+    color: #E10601; }
+
+.bigBox {
+  width: 400px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 460px;
+  top: 120px;
+  box-sizing: border-box; 
+  border-radius: 15px;
+}
+  .bigBox .bigBoxTop {
+    width: 400px;
+    height: 60px;
+    background: green;
+    border-bottom: 1px solid gray;
+    
+   }
+
+/*# sourceMappingURL=dengluzhuce.css.map */
