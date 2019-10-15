@@ -3,7 +3,7 @@ const sass=require("gulp-sass");
 // const uglify = require("gulp-uglify");
 // const es2015Preset = require("babel-preset-es2015");
 
-gulp .task("copy",async()=>{
+gulp .task("copyal",async()=>{
     gulp.src("./**/*")
     .pipe(gulp.dest("D:\\phpStudy\\WWW\\xinyiyuntan"));
 });
@@ -26,12 +26,12 @@ gulp.task("watchall", async ()=>{
         gulp.src("img/**/*")
         .pipe(gulp.dest("D:\\phpStudy\\WWW\\xinyiyuntan\\img"));
     })
-    // gulp.watch("js/*.js",async ()=>{
-    //     gulp.src("js/*.js")
-    //     .pipe(babel({presets:[es2015Preset]}))
-    //     .pipe(uglify())
-    //     .pipe(gulp.dest("D:\\phpStudy\\WWW\\xinyiyuntan\\js"));
-    // })
+    gulp.watch("js/*.js",async ()=>{
+        gulp.src("js/*.js")
+        // .pipe(babel({presets:[es2015Preset]}))
+        // .pipe(uglify())
+        .pipe(gulp.dest("D:\\phpStudy\\WWW\\xinyiyuntan\\js"));
+    })
 
   
 })

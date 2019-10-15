@@ -12,23 +12,21 @@ $(function(){
         iNow--;
          // 判断回流
         if(iNow<0){
-             iNow=5;
+             iNow=4;
         }
         aLi.eq(iNow).siblings().stop().animate({
          opacity:0
-        
        },800);
        aLi.eq(iNow).stop().animate({
-         opacity:1
-          
+         opacity:1   
        },800);
         aSmall.eq(iNow).addClass('small_active').siblings().removeClass('small_active');
     });
       // 右点击切换
       right.click(function(){
         iNow++;
-        if(iNow>5){
-             iNow=0;
+        if(iNow>4){
+          iNow=0;
         }
         aLi.eq(iNow).siblings().stop().animate({
          opacity:0
@@ -68,7 +66,6 @@ function move1(){
        aLi.eq(iNow).stop().animate({
          opacity:1
        },800);
-     
        aSmall.eq(iNow).addClass('small_active').siblings().removeClass('small_active');
 }
 
@@ -76,21 +73,21 @@ function move1(){
 
 function run2(){ 
      iNow++;
-      if(iNow>5){
-             iNow=0;
-        }
+    if(iNow>4){
+        iNow=0;
+      }
       move1();  
 }
 
 // 定时器
-timer = setInterval(run2,800);
+timer = setInterval(run2,3000);
  
 
 
 //当鼠标划入，停止轮播图切换
  $(".content_middle").hover(function(){
    clearInterval(timer);
-},function(){
-   timer = setInterval(run2,800);
+ },function(){
+   timer = setInterval(run2,3000);
 }) 
 })

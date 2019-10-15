@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+/* huiDaoDingBu */
+.box{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 7;
+}
+.huiDaoDingBu{
+    width: 50px;
+    height: 50px;
+    background: #CDC6C6;
+    text-align: center;
+    border-radius: 5px;
+    .icon-tubiao102{
+        font-size: 50px;
+        color: white;
+    }
+}
+ 
+
+// header
+header{
+    width: 100%;
+    height:80px;
+    // background:gray;
+     border-bottom: 2px solid gray;
+}
+.daohang{
+    width: 1100px;
+    height: 80px;
+    margin: 0 auto;
+    background:url(../img/59.jpg) left top;
+    .logo{
+        margin-top:10px;
+        float: left;
+    }
+    .xlsd{
+        float: left;
+        margin-left: 20px;
+        margin-top:30px;
+        width: 100px;
+        height: 40px;
+    }
+    .sousuokuang{
+        width: 250px;
+        height: 20px;
+        margin-top:40px;
+        margin-left: 120px;
+        border-radius: 10px;
+        float: left;
+        outline: none;
+    }
+    .sousuo{
+        width:40px;
+        height: 25px;
+        margin-top:40px;
+        border-radius: 5px;
+        outline: none;
+    }
+    .zc{
+        width: 66px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 14px;
+        margin:5px 5px 0px 0px;
+        color: white; 
+        border-radius: 5px;
+        background: #ec495e;
+        border:none;
+        float: right;
+        margin-top:25px;
+    }
+    .usertouxiang{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border:1px solid gray;
+        margin: 0;
+        float: right;
+        margin-top: 20px;
+    }
+    .icon-touxiang{
+        font-size: 30px;
+        display: block;
+        line-height: 40px;
+        text-align: center;
+    }
+}
+
+// cont
+.cont{
+    width: 100%;
+    height: 577px;
+    .contleft{
+        width: 50%;
+        height:577px;
+        background: red;
+        float: left;
+    }
+    //轮播图
+    .center_area{
+        width:100%;
+        height:600px; 
+        margin:0 auto;
+    }
+    /*中间区域*/
+     .center{
+        width:100%;
+        height:100%;
+        float: left;
+    }
+     .center_top{
+        width:100%;
+        height:100%;
+    }
+    /*<==================================================>*/
+    /*中间轮播图区域*/
+    .content_middle{
+        width:100%;
+        height:100%;
+        position:relative;
+    }
+    .content_middle:hover .common{
+        display: block;
+    }
+    /*左右切换图标*/
+    .content_middle .common{
+        display: block;
+        width:50px;
+        height: 100px;
+        position: absolute;
+        z-index: 4;
+        top:50%;
+        margin-top: -50px;
+        display: none;
+    }
+    .content_middle .btnLeft{
+        opacity: 0.5;
+        left:0px;
+        background: url(../img/sprite.png) no-repeat;
+    }
+    .content_middle .btnRight{
+        opacity: 0.5;
+        right:0px; 
+        background: url(../img/sprite.png) no-repeat -60px 0;
+    }
+    /*左右切换图标*/
+    .content_middle ul li{
+        width:100%;
+        height:100%; 
+        opacity: 0;
+        filter: alpha(opacity=0);
+        position: absolute;
+        margin:0px auto;
+    }
+    /*切换小图标*/
+    .content_middle .table{
+        width:100%; 
+        height:10px;
+        position: absolute;
+        bottom:10px;
+        z-index:3;
+    }
+    .content_middle .table a{
+        width:10px;
+        height:10px;  
+        background:#E3DEE1;
+        opacity: 0.8;
+        margin-right:20px; 
+        display: block;
+        float: right;
+        border-radius: 50%;
+    }
+    .content_middle .table a.small_active{
+        background:green;
+    }
+    
+    
+
+    .contright{
+        width: 50%;
+        height: 577px;
+        background: green;
+        float: left;
+    }
+}

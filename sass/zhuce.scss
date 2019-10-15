@@ -32,7 +32,7 @@ body {
 
 .bigBox {
   width: 400px;
-  height: 300px;
+  height: 320px;
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
   left: 510px;
@@ -56,39 +56,41 @@ body {
     height: 30px;
   }  
 }
+
 .smallBox{
   width: 400px;
-  box-sizing: border-box;
+  margin-top:30px;
   .tishi{
-    width: 380px;
-    padding-top:20px;
-    font-size: 16px;
-    color: red;
+    width:380px;
+    color:red;
     text-align: center;
-    clear: both;
   }
   .wenzi{
-    font-size: 20px;
-    font-family: "楷体";
+    display: inline-block;
+    width:70px;
+    height: 20px;
+    font-size: 16px;
+    color:black;
+    margin-left: 80px;
     }
     .wenbenkuang{
-      margin-top:30px;
-      border-radius: 10px;
-      width: 300px;
-      height: 30px;
+      margin-top:10px;
+      border-radius: 8px;
+      width: 150px;
+      height: 20px;
       outline: none;
     }
-    .denglu{
-      width: 120px;
+    .zhuce{
+      width: 60px;
       height: 30px;
       background: #448FE4;
-      font-size: 24px;
+      font-size: 20px;
       font-family: "楷体";
       color: white;
-      border-radius: 15px;
+      border-radius: 8px;
       outline:none;
       border-color:#448FE4 ;
-      margin-top:20px;
-      margin-left: 140px;
+      margin:30px 30px 0px 0px;
+      float: right;
     }
 }
