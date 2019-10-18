@@ -17,38 +17,36 @@
         <a class="fanhuishouye" href="xinyi.html"><img class="xin" src="img/xin.gif" alt=""><b>点我返回首页哦</b></a>
         <a class="fanhuizhuce" href="denglu.html">已有账号，去登录</a>
         <div class="smallBox">
-            <form action="#">
-                <p class="tishi">提示信息</p>
-                <span class="wenzi">用&nbsp;户&nbsp;&nbsp;名:</span>
-                <input class="wenbenkuang username" type="text" placeholder="请输入用户名"><br>
-                
-                <span class="wenzi">设置密码:</span>
-                <input class="wenbenkuang password" type="password" placeholder="请输入密码"><br>
-                
-                <span class="wenzi">确认密码:</span>
-                <input class="wenbenkuang quepassword" type="password" placeholder="请再次输入密码"><br>
-                
-                <span class="wenzi">手&nbsp;机&nbsp;&nbsp;号:</span>
-                <input class="wenbenkuang photo" type="password" placeholder="请输入手机号"><br>
-                
-                <span class="wenzi">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱:</span>
-                <input class="wenbenkuang email" type="password" placeholder="请输入邮箱"><br>
-                
-                <input class="zhuce" type="reset">
-                <input class="zhuce" type="button" value="提交">
+            <form action="#"></form>
+                <p class="tishi"></p>
+                <div class="zuo">
+                    <span class="wenzi">*用&nbsp;户&nbsp;&nbsp;名:</span>
+                    <input id="username" name="username" class="wenbenkuang username" type="text" placeholder="请输入用户名"><br>
+                    
+                    <span class="wenzi">*设置密码:</span>
+                    <input id="password" name="password" class="wenbenkuang password" type="password" placeholder="请输入密码"><br>
+                    
+                    <span class="wenzi">*确认密码:</span>
+                    <input id="quepassword" class="wenbenkuang quepassword" type="password" placeholder="请再次输入密码"><br>
+
+                    <span class="wenzi">*邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱:</span>
+                    <input id="email" name="email" class="wenbenkuang email" type="text" placeholder="请输入邮箱">
+                </div>
+                </div>    
+                <div class="you">
+                    <span class="wenzi">*头&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;像:</span>
+                    <img id="touxiang" alt="头像" data-address='' title="自定义背景"/>
+                    <!-- <div id="touxiang"></div> -->
+                    <input type="file" name="photo" id="photo" class="photo">
+                </div>
+                <div class="tjcz">
+                    <input class="zhuce" type="reset">
+                    <input id="btnReg" class="zhuce" type="button" value="提交"><br> 
+                </div>
             </form>
         </div>
     </div>
 </body>
 </html>
 <script src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript">
-    $(".username").blur(function(){
-        var r = /^[a-zA-Z][\u4e00-\u9fa5|a-zA-Z]{1,7}/;
-        if(r.test(this.value)){
-			$(".tishi").html("");
-		}else {
-			$(".tishi").html("只能由字母和汉字组成且以字母开头、不少于2位不超过8位");
-		}
-    });
-</script>
+<script src="js/zhuce.js"></script>

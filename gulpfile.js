@@ -32,6 +32,11 @@ gulp.task("watchall", async ()=>{
         // .pipe(uglify())
         .pipe(gulp.dest("D:\\phpStudy\\WWW\\xinyiyuntan\\js"));
     })
+    //监听php
+    gulp.watch("*.php",async ()=>{
+        gulp.src("*.php")
+        .pipe(gulp.dest("D:\\phpStudy\\WWW\\xinyiyuntan"));
+    })
 
   
 })
