@@ -31,7 +31,16 @@
             <a href="#"><img src="img/aiqinghai.png" alt="aiqinghai"></a>
             <a href="shudong.html"><img src="img/shudong.png" alt="shudong"></a>
         </div>
+        <div class="GRZLkuang">
+            <div class="daoSanJiao"></div>
+            <div class="geRenZiLiao">
+                <a href="#"><span class="iconfont icon-gerenzhuye">个人主页</span></a>
+                <span class="iconfont icon-tuichu1">退出登录</span>
+            </div>
+        </div>
+        
     </header>
+    
 <!-- content    -->
     <div class="content">
         <div class="cont">
@@ -289,51 +298,9 @@
 </body>
 </html>
 <script src="js/jquery-1.8.3.min.js"></script>
-<script>
-    // // 图片集锦
-    $(".tu").mouseover(function(){
-        $(this).animate({ 
-            width: "130px",
-            height: "130px"
-        }, 300);
-    });
+<script src="js/xinyi.js"></script>
+<script src="js/cookieTools.js"></script>
 
-    $(".tu").mouseleave(function(){
-    $(this).animate({ 
-        width: "120px",
-        height: "120px"
-    }, 300);
-    });
-    // 评论区 点赞
-    let num=Number($("#zan").html());
-    let falg=false;
-    $(".icon-zan").click(function(){
-        if(falg==false){
-            $(this).css("color","#BF545B");
-            num=num+1;
-            // if(num>=10000){
-            //     $("#zan").html("1W+");
-            //     falg=true;
-            // }else{
-            //     falg=true;
-            //     $("#zan").html(num);
-            // }
-            falg=true;
-            $("#zan").html(num);
-        }else{
-            $(this).css("color","gray");
-            num=num-1;
-            if(num<0){
-               num=0;
-            }
-            $("#zan").html(num);
-            // return;
-            falg=false;
-        }
-    })
-   
-    
-</script>
 
 
 

@@ -48,6 +48,35 @@ header{
     background: white;
     position: fixed;
     z-index: 6;
+    position: relative;
+    .GRZLkuang{
+        position: absolute;
+        top:40px;
+        right: 50px;
+        width: 100px;
+        height: 100px;
+        display: none;
+        .daoSanJiao{
+            width: 0;
+            height: 0;
+            border:5px solid transparent;
+            border-bottom-color:rgb(236, 233, 233);
+        }
+        .geRenZiLiao{
+            width: 100px;
+            height: 75px;
+            background-color:rgb(236, 233, 233);
+            color: gray;
+            display: flex;
+            flex: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            a{
+                color: gray;
+            }
+        }
+    }
 }
 .daohang{
     width: 1100px;
@@ -115,7 +144,7 @@ header{
     height: 40px;
     border-radius: 50%;
     border:1px solid gray;
-    margin: 0;
+    margin: 0;   
 }
 .daohang .icon-touxiang{
     font-size: 30px;
@@ -128,7 +157,7 @@ header{
 .content{
     width:100%;
     position: relative;
-    padding-top:60px;
+    padding-top:0px;
     /* background: #F6F6F6; */
 }
 .cont{
@@ -449,14 +478,25 @@ a:hover .yy{
     padding-left: 10px;
 }
 .nRbottomRight span{
-    display: block;
     width: 470px;
     height:150px; 
     font-size:18px;
     color: black;
-    padding:0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
     overflow:hidden;
 }
+// .nRbottomRight .zhengwen{
+//         width: 470px;
+//         height:150px; 
+//         font-size:18px;
+//         color: black;
+//         display: -webkit-box;
+//         -webkit-box-orient: vertical;
+//         -webkit-line-clamp: 6;
+//         overflow:hidden;
+//     }
 .nRfoot{
     width: 800px;
     clear: both;

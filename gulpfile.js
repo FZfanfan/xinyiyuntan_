@@ -3,7 +3,7 @@ const sass=require("gulp-sass");
 // const uglify = require("gulp-uglify");
 // const es2015Preset = require("babel-preset-es2015");
 
-gulp .task("copyal",async()=>{
+gulp .task("copyall",async()=>{
     gulp.src("./**/*")
     .pipe(gulp.dest("D:\\phpStudy\\WWW\\xinyiyuntan"));
 });
@@ -33,9 +33,14 @@ gulp.task("watchall", async ()=>{
         .pipe(gulp.dest("D:\\phpStudy\\WWW\\xinyiyuntan\\js"));
     })
     //监听php
-    gulp.watch("*.php",async ()=>{
-        gulp.src("*.php")
-        .pipe(gulp.dest("D:\\phpStudy\\WWW\\xinyiyuntan"));
+    gulp.watch("php/**/*",async ()=>{
+        gulp.src("php/**/*")
+        .pipe(gulp.dest("D:\\phpStudy\\WWW\\xinyiyuntan\\php"));
+    })
+    //监听font
+    gulp.watch("font/**/*",async ()=>{
+        gulp.src("font/**/*")
+        .pipe(gulp.dest("D:\\phpStudy\\WWW\\xinyiyuntan\\font"));
     })
 
   
