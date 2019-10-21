@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(26,26,26,.1);
+}
+.daohang{
+    width: 1100px;
+    height: 50px;
+    margin: 0 auto;
+    .logo{
+        width: 70px;
+        height: 50px;
+        float: left;
+    }
+    .xinyiwenzi{
+        width:50px;
+        height: 30px;
+        margin-top:20px;
+        float: left;
+    }
+    .xiewenzhang{
+        width: 100px;
+        height: 50px;
+        float: left;
+        font-size: 32px;
+        font-family: "楷体";
+        color: black;
+        line-height: 50px;
+        border-left: 1px solid #EEEEEE;
+        margin-left: 20px; 
+    }
+    .daohangright{
+        float: right;
+        .usertouxiang{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border:1px solid gray;
+            margin: 0;
+            float: right;
+            margin-top:5px;
+        }
+        .icon-touxiang{
+            font-size: 30px;
+            display: block;
+            line-height: 40px;
+            text-align: center;
+        }
+        .zc{
+            width: 66px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 14px;
+            margin:0px 5px 0px 0px;
+            color: white; 
+            border-radius: 5px;
+            background: #ec495e;
+            border:none;
+            float: right;
+            margin-top:10px;
+        }
+    }
+}
+.content{
+    width: 100%;
+    .tupian{
+        width: 800px;
+        height: 300px;
+        background: #EEEEEE;
+        margin:0 auto;
+        margin-top:30px;
+        position: relative;
+        input{
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            left: 360px;
+            top:138px;
+            opacity: 0;
+        }
+        .icon-xiangji{
+            font-size:70px;
+            position: absolute;
+            left: 355px;
+            top:130px;
+        }
+        b{
+            position: absolute;
+            left: 325px;
+            top:120px;
+        }
+    }
+}
+.biaotikuang{
+    width: 800px;
+    height: 50px;
+    margin: 5px auto;
+    .biaoti{
+        width: 800px;
+        outline: none;
+        height: 50px;
+        margin: 0 auto;
+        border: none;
+        font-size: 32px;
+        font-weight: bold; 
+    }
+}
+.zhengwen{
+    width: 800px;
+    height: 500px;
+    margin: 10px auto;
+    #zhengwenyu{
+        width: 800px;
+        height: 500px;
+        resize: none;//文本域固定大小
+        outline: none;
+        font-size: 18px;
+        border: none;
+    }
+}
+
